@@ -1,7 +1,7 @@
 @import "http://webfonts.ru/import/opensans.css";
 @font-face {
   font-family: 'Biko';
-  src: url("../fonts/Biko_Regulart.otf"); }
+  src: url("../fonts/Biko_Regular.otf"); }
 
 * {
   margin: 0;
