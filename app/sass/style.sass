@@ -1,0 +1,399 @@
+@import "http://webfonts.ru/import/opensans.css";
+
+* 
+	margin : 0;
+	padding: 0;
+
+body 
+	background: #fff;
+	text-align: center;
+	font-size: 0px;
+	font-family: 'Open Sans';
+
+.h1 
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1em;
+
+.p 
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+
+.button
+	height: 60px;
+	border: none;
+	outline: none;
+	line-height: 60px;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 0 30px;
+	margin: 15px 0;
+	font-family: 'Open Sans';
+	cursor: pointer;
+	background: #347a51;
+	position: relative;
+
+	&:before
+		content: '';
+		display: block;
+		border: 2px solid #347a51;
+		width: calc(100% + 6px);
+		height: calc(100% + 6px);
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		opacity: 0;
+		transition: all 300ms ease;
+		transform-origin: 50% 50%;
+		transform: scale(.95);
+
+	&:hover:before
+		opacity: 1;
+		transform: scale(1)
+
+.section
+	&.section_top	
+		background: radial-gradient(circle at 40% 40%, #b5d174, #164834 70%);
+		position: relative;
+		overflow: hidden;
+
+		&:after, &:before
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 100%;
+			background: #f5f9f7;
+		&:after
+			transform: rotate(-6deg);
+			transform-origin: 0 0 0;
+			left: 50%;
+		&:before
+			transform: rotate(6deg);
+			right: 50%;
+			transform-origin: 100% 0 0;
+
+		.section_top__content
+			padding: 50px 0 85px 0;
+			position: relative;
+
+			.section_top__content__h1 
+				margin: 20px 0 0 100px;
+
+			.section_top__content__p 
+				margin: 48px 50px 0 20px;
+
+	&.section_grey
+		background: #f5f9f7;
+
+		.section_grey__part 
+			width: 50%;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+
+		&.section_features
+			padding: 50px 0 30px 0;
+
+			.section_features__ul
+				margin: 50px 0 0 0;
+				font-size: 18px;
+				text-align: center;
+				list-style: none;
+				font-weight: 300;
+
+		&.section_buy 
+			padding: 75px 0;
+			margin: 25px 0 0 0;
+
+	.section__body
+		max-width: 960px;
+		margin: 0 auto;
+		text-align: left;
+
+.header 
+	height: 40px;
+	padding: 30px 0 0 0;
+	text-align: left;
+	position: relative;
+
+	.header__logo
+		display: inline-block;
+		line-height: 40px;
+		height: 40px;
+		color: #000;
+		font-size: 27px;
+		text-decoration: none;
+		font-family: 'Biko';
+		margin: 0 0 0 20px;
+
+		.header__logo__img 
+			height: 40px;
+			display: inline;
+			vertical-align: top;
+
+.nav 
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	height: 40px;
+
+	.nav__li 
+		display: inline-block;
+		list-style: none;
+		vertical-align: top;
+
+	.nav__link 
+		font-size: 18px;
+		color: #000;
+		text-decoration: none;
+		line-height: 36px;
+		border: 2px solid rgba(0, 0, 0, 0);
+		height: 36px;
+		display: inline-block;
+		padding: 0 20px;
+		margin: 0 10px;
+		font-weight: 300;
+		cursor: pointer;
+		position: relative;
+		vertical-align: top;
+
+		&:before
+			content: '';
+			display: block;
+			border: 2px solid #000;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			opacity: 0;
+			transform: scale(.95);
+			transition: all 300ms ease;
+
+		&:hover:before
+			opacity: 1;
+			transform: scale(1);
+
+	.nav__link_active 
+		border-color: #000;
+		
+		&:before
+			display: none;
+
+.big-logo 
+	margin: 0 0 0 60px;
+
+.buy__logo 
+	font-size: 60px;
+	line-height: 90px;
+	height: 90px;
+	font-family: 'Biko';
+
+	.buy__logo__img
+		display: inline-block;
+		vertical-align: top;
+		height: 90px;
+
+.footer
+	padding: 100px 0 20px 0;
+	background: radial-gradient(circle at 50% 0%, #b5d174, #164834 70%);
+	position: relative;
+	overflow: hidden;
+
+	&:after, &:before
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 100%;
+		background: #f5f9f7;
+	&:after
+		transform: rotate(6deg);
+		transform-origin: 0 0 0;
+		left: 50%;
+	&:before
+		transform: rotate(-6deg);
+		right: 50%;
+		transform-origin: 100% 0 0;
+	
+	.footer__li
+		display: inline-block;
+		list-style: none;
+
+	.footer__link
+		height: 46px;
+		display: inline-block;
+		line-height: 46px;
+		font-size: 20px;
+		vertical-align: top;
+		color: #000;
+		font-weight: 300;
+		text-decoration: none;
+		cursor: pointer;
+		padding: 0 20px;
+		margin: 0 10px;
+		position: relative;
+		transition: all 300ms ease;
+		transform: scale(.9);
+
+		&.footer__link_social
+			padding: 0!important;
+			margin: 0 25px;
+
+			&:before
+				display: none;
+
+			&:hover 
+				transform: scale(1);
+
+		&:before
+			content: '';
+			display: block;
+			border: 2px solid #000;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			opacity: 0;
+			transform: scale(.95);
+			transition: all 300ms ease;
+
+		&:hover:before
+			opacity: 1;
+			transform: scale(1);
+
+	.footer__copy
+		font-size: 18px;
+		margin: 55px 0 0 0;
+.taps 
+	.tap
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background: url('../img/tap.png');
+		opacity: 1;
+
+		&.tap_1
+			left: 580px;
+			top: 130px;
+			transform: rotate(95deg);
+		&.tap_2
+			left: 670px;
+			top: 85px;
+			transform: rotate(82deg);
+		&.tap_3
+			left: 770px;
+			top: 135px;
+			transform: rotate(105deg);
+		&.tap_4
+			left: 870px;
+			top: 185px;
+			transform: rotate(130deg);
+		&.tap_5
+			left: 890px;
+			top: 271px;
+			transform: rotate(175deg);
+		&.tap_6
+			left: 895px;
+			top: 360px;
+			transform: rotate(198deg);
+
+
+@for $i from 1 through 6
+	.tap_#{$i}
+		animation-name: animationTap#{$i};
+		animation-duration: 5000ms;
+
+	@keyframes animationTap#{$i} 
+		0%
+			opacity: 0;
+
+		#{($i + 2)*10}%
+			opacity: 0;
+
+		#{($i + 2)*10 + 5}%
+			opacity: 1;
+
+		90%
+			opacity: 1;
+
+		100%
+			oapcity: 0;
+
+
+
+@media (max-width: 960px)
+	.taps
+		display: none;
+
+	.big-logo
+		margin-left: 0;
+
+	.section_top__content
+		text-align: center
+
+		.section_top__content__h1
+			margin: 20px 20px 0 20px!important;
+			text-align: center!important;
+
+		.section_top__content__p 
+			margin: 40px 20px 0 20px!important;
+
+@media (max-width: 729px) 
+	.section_grey__part
+		display: block!important;
+		width: 100%!important;
+		margin: 0 0 10px 0;
+
+	.section_features__ul
+		margin-top: 20px !important;
+
+	.section_buy
+		padding: 20px 0!important;
+
+	.header
+		height: auto!important;
+		padding: 15px 0 0 0!important;
+
+	.header__logo 
+		display: block!important;
+		text-align: center!important;
+		margin: 0!important;
+
+	.nav
+		position: static!important;
+		text-align: center!important;
+		margin: 10px 0 0 0!important;
+
+	.footer__li_mobile50 
+		width: 50%;
+
+		.footer__link
+			width: 100%;
+			margin: 0!important;
+			box-sizing: border-box;
+
+	.footer__link_social
+		margin: 20px 5px 0 5px!important;
+
+	.footer__copy
+		margin: 25px 0 0 0!important;
+
+	.footer
+		padding: 55px 0 10px 0!important;
+
+	.p
+		font-size: 16px;
+
+	.h1, 
+	.section_features__ul
+		font-size: 24px;
+
+	.img_macbook, .big-logo
+		max-width: 95%;
+		height: auto!important;
