@@ -1,7 +1,10 @@
-@import "http://webfonts.ru/import/opensans.css";
 @font-face {
   font-family: 'Biko';
   src: url("../fonts/Biko_Regular.otf"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/open_sans.woff2"); }
 
 * {
   margin: 0;
@@ -250,7 +253,8 @@ body {
   width: 60px;
   height: 60px;
   background: url("../img/tap.png");
-  opacity: 1; }
+  opacity: 1;
+  pointer-events: none; }
   .taps .tap.tap_1 {
     left: 580px;
     top: 130px;
